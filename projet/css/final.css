@@ -1,18 +1,8 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
+/* apply a natural box layout model to all elements, but allowing components to change */  
   body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    background: url(../images/buildings.jpg) no-repeat fixed;
-    background-size: cover;
+    margin: 0; /* removes default space */
+    padding: 0;  /* removes default space */
   }
   h1, h2 {
     font-family: 'Indie Flower', cursive;
@@ -56,12 +46,10 @@ html {
     background: #eeeeee;
   }
   header h1 {
-    font-size: 100px;
-    text-transform: inherit;
+    font-size: 100px; 
   }
   header h2 {
-    font-size: 32px;
-    text-transform: inherit;
+    font-size: 32px; 
   }
   
   

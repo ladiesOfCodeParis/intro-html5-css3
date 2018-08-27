@@ -83,6 +83,8 @@
       #Le projet du jour
 
       Réaliser un site vitrine que chacune personnalisera à son image ! 
+
+      <img src="./framework/img/workshop/projetfinal.png" />
       </script>
     </section>
 
@@ -98,17 +100,27 @@
       <script type="text/template">
         #Un navigateur ?
 
-        Un navigateur permet de consulter des sites Internet. 
-        
+        Un navigateur permet de consulter des sites Internet. Il communique avec un serveur. 
+
+        <p class="centered"><img src="./framework/img/workshop/chrome.png" width="100" /> <img src="./framework/img/workshop/firefox.png" width="100" /> <img src="./framework/img/workshop/safari.png" width="100" /></p>
+
+        Un serveur est une machine qui va héberger un site web et le rendre disponible à qui souhaite.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Comment ça marche ?
+
         Quand tu tapes "http://www.google.fr" sur ton navigateur ...
         
-        * Le navigateur va communiquer avec le serveur de Google <!-- .element: class="delayed" -->
+        * Le navigateur va retrouver le serveur de Google et communiquer avec lui <!-- .element: class="delayed" -->
         * Le serveur lui répond du HTML <!-- .element: class="delayed" -->
         * Le navigateur interprète ce HTML et l'affiche pour le visiteur <!-- .element: class="delayed" -->
       </script>
     </section>
     
-    <section class="slide" data-markdown>
+    <!-- <section class="slide" data-markdown>
       <script type="text/template">
         #La console ?
 
@@ -117,7 +129,7 @@
         On peut y accéder en faisant F12 sur PC (ou Clic Droit > Inspecter l'élément). 
         
       </script>
-    </section>
+    </section> -->
     
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -126,8 +138,9 @@
         Un éditeur de texte permet d'écrire et de lire du code. 
 
         Il en existe énormément sur le marché: Sublime Text, Notepad++, Visual Code ... 
+        <p class="centered"><img src="./framework/img/workshop/atom.png" width="100" /> <img src="./framework/img/workshop/sublime.jpg" width="100" /> <img src="./framework/img/workshop/visualcode.jpg" width="100" /></p>
 
-        On ne peut pas écrire de code sous Word ! 
+        On ne peut pas écrire de code sous Word !  
       </script>
     </section>
 
@@ -139,7 +152,7 @@
         
         Le CSS3 permet de définir des règles d'affichage pour ces blocs. 
 
-        ![](http://cl.ly/image/14193Y1x1f2c/mic-drop.gif)  ![](http://cl.ly/image/14193Y1x1f2c/mic-drop.gif)
+        <p class="centered"><img src="./framework/img/workshop/nocss.png"   width="500" />        <img src="./framework/img/workshop/css.png" width="500"  /><br /><em style="font-size: 14px;">Le site de Ladies of Code sans et avec CSS</em></p>
       </script>
     </section>
     
@@ -159,7 +172,7 @@
         ### Exemple: Afficher un texte en gras
 
         ```html
-        <tag>Texte à décrire</tag>
+        <strong>Texte à décrire</strong>
         ```
 
 
@@ -200,6 +213,394 @@
       </script>
     </section>
 
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # On a fait notre première page ! 
+        <p class="centered"><img src="https://media0.giphy.com/media/hTh9bSbUPWMWk/giphy.gif" /></p>
+
+        <p class="centered">Mais qu'est-ce que tout ce code veut dire ?</p>
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Le doctype
+
+        * Ce n'est pas un tag HTML 
+        * Il indique au navigateur quelle version de HTML nous utilisons pour la page
+
+
+        <pre><code><strong>&lt;!DOCTYPE html&gt;</strong>
+          </code></pre>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # La balise html
+
+        * C'est l'élément racine de notre page 
+        * On y indique la langue de la page dans l'attribut lang
+
+
+        <pre><code><strong>&lt;html lang="fr"&gt;</strong>
+          </code></pre>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # La balise head
+
+        * C'est l'en-tête de la page
+        * On y indique le titre (navigateur + référencement)
+        * On peut y ajouter les ressources CSS et JS
+
+
+        <pre><code><strong>&lt;head&gt;</strong>
+          </code></pre>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # La balise body
+
+        * C'est l'élément qui va contenir le corps de la page 
+        * C'est ici qu'on va commencer à réfléchir aux sections de notre page
+
+
+        <pre><code><strong>&lt;body&gt;</strong>
+          </code></pre>
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Structurer une page HTML 
+
+        <p class="centered">Il faut penser à la structure de notre page</p>
+        <p class="centered">On va utiliser des balises pour représenter les différents éléments de la page<br />
+          <img src="./framework/img/workshop/elements-html.png" /></p>
+
+        <p>
+        <a href="http://www.html5doctor.com">HTML5Doctor</a> pour connaître les balises HTML5 existantes<br/>
+        <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">Graphique pour savoir quelle balise utiliser</a></p>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Pensons à la structure de notre futur site !
+
+        1. Combien de sections va-t-il falloir créer ? 
+        2. Avec quelles balises va-t-on devoir structurer notre page ? 
+
+        <p class="centered"><img src="./framework/img/workshop/projetfinal.png" width="300"/></p>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice 2 : Structure HTML
+
+        1. Créer les blocs dans votre corps de page. 
+        2. On va créer un header, deux sections et un footer.
+        3. Ajouter l'attribut id="" à chaque section pour pouvoir l'identifier plus tard dans notre CSS
+
+        <p class="centered"><img src="./framework/img/workshop/projetfinal.png" width="300"/></p>
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+          # Solution
+          ```html 
+          <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon site web</title> 
+  </head>
+
+  <body>
+    <!-- page header -->
+    <header>
+    </header>
+
+    <!-- about me section -->
+    <section id="about">
+    </section>
+
+    <!-- My favorite things section -->
+    <section id="loves"> 
+    </section>
+
+    <!-- footer & contact info -->
+    <footer id="contact">    </footer>
+  </body>
+</html>
+          ``` 
+        </script>
+      </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        # Contenu
+        ## Personnalisons nos sites ! 
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Les balises HTML
+
+        Chaque contenu de notre page va être inclus dans un tag. 
+
+        Il existe de nombreuses balises pour représenter le contenu en HTML5. 
+        <p class="centered">
+          <img src="./framework/img/workshop/elements-html.png" />
+        </p>
+
+        <p>
+          <a href="http://www.html5doctor.com">HTML5Doctor</a> pour connaître les balises HTML5 existantes<br/>
+          <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">Graphique pour savoir quelle balise utiliser</a>
+        </p>
+      
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Les paragraphes
+
+        La balise <strong>&lt;p&gt;</strong> va représenter un paragraphe.
+
+
+        ```html 
+          <p>Je suis un paragraphe</p> 
+        ```
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Les titres
+
+        Les titres (<em>heading</em>) vont être représentés par les balises h1, h2 ... à h6. 
+
+        Le niveau de titre le plus élevé est h1. Ils ont une pertinence pour le référencement et doivent s'imbriquer les uns dans les autres. 
+
+        ```html 
+        <h1>Mes trucs préférés</h1>
+        
+        <h2>Mes animaux préférés</h2>
+        <h3>Les corgis</h3>
+        <h3>Les paresseux</h3>
+
+
+        <h2>Mes plats préférés</h2>
+        <h3>Les sushis</h3>
+        <h3>Les makis</h3>
+        ```
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+          # Les identifiants
+  
+          Les identifiants sont des attributs qui vont être utiles pour cibler un élément précis de notre page HTML.
+
+          Ils vont être réutilisés notamment par le CSS pour pouvoir appliquer les styles souhaités. 
+          
+          Ils sont <strong>uniques</strong> au sein de la page. 
+
+          ```html 
+          <section id="apropos">
+            <h2>Mes trucs préférés</h2>
+          </section>
+          ```
+  
+        </script>
+      </section>
+
+      <section class="slide" data-markdown>
+          <script type="text/template">
+            # Les classes
+    
+            Les classes sont des attributs qui vont être utiles pour cibler un groupe d'éléments dans notre page HTML. 
+
+            Ils vont être réutilisés notamment par le CSS pour pouvoir appliquer les styles souhaités. 
+            
+            <strong>Plusieurs éléments</strong> peuvent avoir la même classe au sein de la page. 
+  
+            ```html 
+            <section id="apropos">
+              <h2 class="soustitre">Mes trucs préférés</h2> 
+
+              <h2 class="soustitre">Mes animaux préférés</h2>
+            </section>
+            ```
+    
+          </script>
+        </section>
+    
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice 4: Personnalisons nos contenus
+
+        Il est temps de personnaliser la page HTML ! 
+        
+        1. Utiliser les balises précédentes pour éditer les sections avec le contenu de votre choix. 
+
+        ```html 
+        <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon site web</title> 
+</head>
+
+<body>
+  <!-- page header -->
+  <header>
+  </header>
+
+  <!-- about me section -->
+  <section id="about">
+  </section>
+
+  <!-- My favorite things section -->
+  <section id="loves"> 
+  </section>
+
+  <!-- footer & contact info -->
+  <footer id="contact">    </footer>
+</body>
+</html>
+        ``` 
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Les images
+
+        Une image va être représentée par une balise <strong>img</strong>. L'URL de l'image sera renseignée dans l'attribut <em>src</em>.
+
+        L'attribut <em>alt</em> représente le texte alternatif de l'image: si jamais l'image ne peut être affichée, le navigateur affichera ce texte. 
+        
+
+        ```html
+        <img src="chemin_vers_limage.jpg" alt="mon image" /> 
+        ``` 
+
+        Cette balise est particulière car elle ne se ferme pas !
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Les liens
+
+        Un lien est représenté par la balise <strong>a</strong>. L'attribut <em>href</em> indiquera le site cible.
+        ```html
+        <a href="http://paris.ladiesofcode.fr">Lien vers Ladies of Code</a> 
+        ``` 
+
+        On peut ouvrir le lien vers une nouvelle fenêtre en changeant l'attribut <em>target</em>. 
+        ```html
+        <a href="http://www.google.fr" target="_blank">Lien vers Google.fr</a> 
+        ``` 
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+          # Rendre une image cliquable
+  
+          On peut combiner les deux balises a et img pour rendre une image cliquable. 
+
+          ```html 
+          <a href="http://www.monsite.com">
+            <img src="mon_image.jpg" alt="mon image"/>
+          </a>
+          ```
+  
+        </script>
+      </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice 5: Ajoutons liens et images !
+
+        1. Créer un dossier "images" à la racine de votre projet 
+        2. Mettre votre photo de profil et des images de choses que vous aimez. 
+        3. Afficher ces images dans les sections "À propos" et "J'adore"
+
+
+      </script>
+    </section>
+    <section class="slide" data-markdown>
+        <script type="text/template">
+          # Solution
+          ```html 
+          <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon site web</title> 
+  </head>
+
+  <body>
+    <!-- page header -->
+    <header>
+    </header>
+
+
+    <!-- about me section -->
+    <section id="about">
+        <img class="profile-img" src="images/profile.jpg" alt="Jane Doe">
+  
+        <h1>À propos de moi</h1>
+  
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+  
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+  
+      <!-- My favorite things section -->
+      <section id="loves">
+        <h1>J'adore</h1>
+        <p>Les choses que j'adore</p>
+        <img src="images/ballet.jpg" alt="ballet">
+        <img src="images/cheesecake.jpg" alt="cheesecakes">
+        <img src="images/sea.jpg" alt="sea">
+      </section>
+    <!-- footer & contact info -->
+    <footer id="contact">    </footer>
+  </body>
+</html>
+          ``` 
+        </script>
+      </section>
+
     <section class="slide title" data-markdown>
       <script type="text/template">
         # CSS3
@@ -207,6 +608,68 @@
       </script>
     </section>
     
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # CSS
+
+        Ce langage est utilisé pour personnaliser l'apparence d'une page HTML.
+
+        Il n'utilise pas de balises. On utilise des accolades pour définir nos règles de style. 
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Syntaxe CSS
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Fichier CSS
+
+        On utilise la balise link qu'on va mettre dans l'en-tête de notre page HTML.
+
+        ```html
+        <head>
+          <title>Titre de la page</title>
+          <link rel="stylesheet" href="css/style.css">
+        </head> 
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice 6: Créer mon fichier CSS
+
+        1. Créer un dossier "css" dans votre projet 
+        2. Créer un fichier style.css dans votre dossier "css"
+        3. Ajouter la balise suivante dans le head de votre page 
+        ```html 
+        <link rel="stylesheet" href="css/style.css">
+        ```
+        4. Tester que le style est bien appelé en ajoutant dans le fichier le code suivant :
+        ```css 
+        body {
+          background-color: purple;
+        }
+        ```
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice 6: Créer mon fichier CSS
+
+        
+      </script>
+    </section>
+
     <!-- Last slide -->
     <section class="slide last">
       <h1>Merci!</h1>
