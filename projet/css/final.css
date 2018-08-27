@@ -1,34 +1,33 @@
-/* apply a natural box layout model to all elements, but allowing components to change */  
-  body {
+/* Style du projet */
+body {
     font-family: 'Roboto', sans-serif;
-    margin: 0; /* removes default space */
-    padding: 0;  /* removes default space */
+    margin: 0; /* enlever l'espace par défaut */
+    padding: 0;  /* enlever l'espace par défaut */
   }
   h1, h2 {
-    font-family: 'Indie Flower', cursive;
-    margin: 0; /* removes default space */
-    font-weight: normal; /* removes default bold style */
+    font-family: 'Indie Flower', cursive; 
+    font-weight: normal; /* enlève le style gras par défaut */
     text-transform: lowercase;
   }
   h1 {
     font-size: 75px;  
   }
+  h2 {
+    font-size: 32px; 
+  }
   p {
     font-size: 18px;
-    line-height: 1.5; /* adjusts space between the lines */
+    line-height: 1.5; /* interligne */
   }
   a {
     color: #342481; 
-  }
-  a:hover {
-    color: #CECCCC;
-  }
+  } 
   header, 
   section, 
   footer {
     padding: 100px 150px;
   }
-  .loves, 
+  #loves, 
   footer {
     text-align: center;
   }
@@ -40,22 +39,16 @@
   }
   
   
-  /* PAGE HEADER
+  /* header de la page
   -----------------------------------------*/
   header {
     background: #eeeeee;
-  }
-  header h1 {
-    font-size: 100px; 
-  }
-  header h2 {
-    font-size: 32px; 
-  }
+  } 
   
   
-  /* ABOUT
+  /*  section "A propos de moi"
   -----------------------------------------*/
-  .about {
+  #about {
     background: #00A69D;
     color: white;
   }
@@ -66,18 +59,18 @@
   }
   
   
-  /* LOVES - things I love 
+  /* Section "Mes choses préférées"
   -----------------------------------------*/
-  .loves {
+  #loves {
     background: #342481;
   }
-  .loves img {
+  #loves img {
     width: 250px;
     margin: 15px;
   }
   
   
-  /* FOOTER - contact info
+  /*  footer & contact info
   -----------------------------------------*/
   footer {
     background: #444;
