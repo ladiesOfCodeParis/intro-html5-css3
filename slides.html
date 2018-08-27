@@ -30,11 +30,11 @@
         <p><strong>Mot de passe:</strong> wifi password</p>
         <hr>
         
-        <h2>Étapes<br> & Install</h2>
+        <h2>Prérequis à télécharger<br></h2>
         <ol class="downloads">
-          <li>Learner files (zip file): <a href="https://github.com/ladiesOfCodeParis/intro-html5-css3/archive/master.zip">http://bit.ly/create-custom-url</a>
+          <li>Présentation (Fichier ZIP): <a href="https://bit.ly/intro-html5-css3">https://bit.ly/intro-html5-css3</a>
             <ul>
-              <li>Dé-zipper l'archive des fichiers (<em>extraire les fichiers</em>)</li>
+              <li>Dé-zipper l'archive des fichiers</li>
               <li>Ouvrir le fichier <em>slides.html</em> dans le navigateur de ton choix</li>
             </ul>
           </li>
@@ -43,11 +43,6 @@
           </li>
         </ol>
       </div>
-      <footer>
-        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-        <p class="left">Content created by <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
-        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
-      </footer>
     </section> 
     
     <section class="slide intro">
@@ -137,7 +132,7 @@
 
         Un éditeur de texte permet d'écrire et de lire du code. 
 
-        Il en existe énormément sur le marché: Sublime Text, Notepad++, Visual Code ... 
+        Il en existe énormément: Sublime Text, Notepad++, Visual Code ... 
         <p class="centered"><img src="./framework/img/workshop/atom.png" width="100" /> <img src="./framework/img/workshop/sublime.jpg" width="100" /> <img src="./framework/img/workshop/visualcode.jpg" width="100" /></p>
 
         On ne peut pas écrire de code sous Word !  
@@ -190,13 +185,13 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Exercice 1: Créons un fichier nommé index.html !
+        # Exercice 1: Créons un fichier nommé index.html ! (5mn)
 
         1. Crée un dossier qui contiendra ton futur site 
-        2. Crée dans ce dossier un fichier qui s'appellera `index.html`
-        3. Y ajouter le code basique d'une page HTML comme ci-dessous 
-        4. Remplacer le contenu de la balise title avec le titre de ton choix
-        5. Ouvrir index.html dans le navigateur de ton choix 
+        2. Dans ce dossier, crée un fichier qui s'appellera `index.html`
+        3. Y ajouter le code ci-dessous (<em>on y reviendra</em>)
+        4. Remplacer le contenu de la balise ```title``` avec le titre de ton choix
+        5. Ouvrir ```index.html``` dans le navigateur 
 
         ```html
         <!DOCTYPE html>
@@ -254,8 +249,8 @@
         # La balise head
 
         * C'est l'en-tête de la page
-        * On y indique le titre (navigateur + référencement)
-        * On peut y ajouter les ressources CSS et JS
+        * On y indique le titre via la balise ```title``` (SEO + navigateur)
+        * On peut y ajouter les ressources CSS et JS (<em>on le fera plus tard</em>)
 
 
         <pre><code><strong>&lt;head&gt;</strong>
@@ -328,19 +323,19 @@
   </head>
 
   <body>
-    <!-- page header -->
+    <!-- header de la page -->
     <header>
     </header>
 
-    <!-- about me section -->
+    <!-- section "A propos de moi" -->
     <section id="about">
     </section>
 
-    <!-- My favorite things section -->
+    <!-- Section "Mes choses préférées" -->
     <section id="loves"> 
     </section>
 
-    <!-- footer & contact info -->
+    <!--  footer & contact info -->
     <footer id="contact">    </footer>
   </body>
 </html>
@@ -380,7 +375,7 @@
       <script type="text/template">
         # Les paragraphes
 
-        La balise <strong>&lt;p&gt;</strong> va représenter un paragraphe.
+        La balise ```<p>``` va représenter un paragraphe.
 
 
         ```html 
@@ -397,7 +392,7 @@
 
         Les titres (<em>heading</em>) vont être représentés par les balises h1, h2 ... à h6. 
 
-        Le niveau de titre le plus élevé est h1. Ils ont une pertinence pour le référencement et doivent s'imbriquer les uns dans les autres. 
+        Le niveau de titre le plus élevé est ```<h1>```. Ils ont une pertinence pour le référencement et doivent s'imbriquer les uns dans les autres. 
 
         ```html 
         <h1>Mes trucs préférés</h1>
@@ -459,7 +454,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Exercice 4: Personnalisons nos contenus
+        # Exercice 3: Personnalisons nos contenus
 
         Il est temps de personnaliser la page HTML ! 
         
@@ -502,7 +497,7 @@
         Une image va être représentée par une balise <strong>img</strong>. L'URL de l'image sera renseignée dans l'attribut <em>src</em>.
 
         L'attribut <em>alt</em> représente le texte alternatif de l'image: si jamais l'image ne peut être affichée, le navigateur affichera ce texte. 
-        
+
 
         ```html
         <img src="chemin_vers_limage.jpg" alt="mon image" /> 
@@ -548,7 +543,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Exercice 5: Ajoutons liens et images !
+        # Exercice 4: Ajoutons liens et images !
 
         1. Créer un dossier "images" à la racine de votre projet 
         2. Mettre votre photo de profil et des images de choses que vous aimez. 
@@ -562,41 +557,46 @@
           # Solution
           ```html 
           <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Mon site web</title> 
-  </head>
-
-  <body>
-    <!-- page header -->
-    <header>
-    </header>
-
-
-    <!-- about me section -->
-    <section id="about">
-        <img class="profile-img" src="images/profile.jpg" alt="Jane Doe">
-  
-        <h1>À propos de moi</h1>
-  
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-  
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-  
-      <!-- My favorite things section -->
-      <section id="loves">
-        <h1>J'adore</h1>
-        <p>Les choses que j'adore</p>
-        <img src="images/ballet.jpg" alt="ballet">
-        <img src="images/cheesecake.jpg" alt="cheesecakes">
-        <img src="images/sea.jpg" alt="sea">
-      </section>
-    <!-- footer & contact info -->
-    <footer id="contact">    </footer>
-  </body>
-</html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <title>Jane Doe | Mon site web</title> 
+            </head>
+          
+            <body>
+              <!-- header de la page -->
+              <header>
+                <h1>Salut! Je suis <strong>Jane Doe</strong>.</h1>
+                <h2>Bienvenue sur mon <strong>site web</strong>. Je l'ai fait <strong>toute seule</strong>, ouais ouais :)</h2>
+              </header>
+          
+              <!-- section "A propos de moi" -->
+              <section id="about">
+                <img class="profile-img" src="images/profile.jpg" alt="Jane Doe">
+          
+                <h1>À propos de moi</h1>
+          
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+          
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </section>
+          
+              <!-- Section "Mes choses préférées" -->
+              <section id="loves">
+                <h1>J'adore</h1>
+                <p>Les choses que j'adore</p>
+                <img src="images/ballet.jpg" alt="ballet">
+                <img src="images/cheesecake.jpg" alt="cheesecakes">
+                <img src="images/sea.jpg" alt="sea">
+              </section>
+          
+              <!-- footer & contact info -->
+              <footer id="contact">
+                <h1>Contacte moi</h1>
+                <p>Envoyez moi un email à <a href="mailto:hello@myemail.com">hello@myemail.com</a> ou par <a href="http://linkedin.com" target="_blank">LinkedIn</a>!</p>
+              </footer>
+            </body>
+          </html>
           ``` 
         </script>
       </section>
@@ -624,14 +624,57 @@
       <script type="text/template">
         # Syntaxe CSS
 
+        Un <strong>sélecteur</strong> correspond à un tag HTML que l'on souhaite cibler (ex: p, h1).
+        Un sélecteur peut correspondre à une balise HTML, un identifiant de balise, une classe ... 
+
+        Une <strong>propriété</strong> correspond à une "caractéristique" de la balise à modifier : la couleur du texte,
+        la taille de la police par exemple. Les valeurs dépendent de la propriété.  
+
+        ```css
+        selecteur {
+          propriete : valeur; 
+        }
+        ```
+
+        Notes  
+
+        <a href="https://www.w3schools.com/cssref/">Ensemble des propriétés CSS</a>
       </script>
     </section>
+
+    <section class="slide" data-markdown>
+        <script type="text/template">
+          # Exemple CSS
+  
+          Cette règle va changer le texte contenu dans body et le mettre en rouge
+          ```css
+          body {
+            color : red; 
+          }
+          ```
+
+          Cette règle va mettre en gras le texte qui se trouve dans une balise ayant pour id "titrePrincipal" 
+          ```css
+          #titrePrincipal {
+            font-weight : bolder; 
+          }
+          ```
+          Notes : 
+  
+          <a href="https://www.w3schools.com/cssref/">Ensemble des propriétés CSS</a>
+        </script>
+      </section>
+  
 
     <section class="slide" data-markdown>
       <script type="text/template">
         # Fichier CSS
 
-        On utilise la balise link qu'on va mettre dans l'en-tête de notre page HTML.
+        Il est possible d'inclure du CSS directement dans une page HTML en utilisant la balise ```<style>```
+
+        Il vaut mieux séparer le CSS du HTML cependant pour plus de clarté. 
+
+        On utilise la balise link qu'on va mettre dans l'en-tête de notre page HTML. Cette balise va appeler 
 
         ```html
         <head>
@@ -644,7 +687,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Exercice 6: Créer mon fichier CSS
+        # Exercice 5: Créer mon fichier CSS
 
         1. Créer un dossier "css" dans votre projet 
         2. Créer un fichier style.css dans votre dossier "css"
@@ -664,21 +707,251 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Exercice 6: Créer mon fichier CSS
+        # Espacement des blocs
+
+        La propriété ```margin``` permet d'ajuster l'espacement du bloc avec les blocs voisins. 
+        
+        La propriété ```padding``` permet d'ajuster l'espacement du contenu au sein du bloc. 
+
+        La propriété ```border``` définit une bordure autour du bloc. 
+
+        Les propriétés ```width``` et ```height``` définissent largeur et hauteur du bloc. 
+
+        <p class="centered"><img src="framework/img/workshop/marginpadding.jpg" /></p>
+        
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        # Exercice 6 - Espacements 
+
+        Ré-initialiser l'espacement autour de la balise body pour enlever l'espace par défaut.
+
+        <p class="centered"><img src="framework/img/workshop/extraspacing.png" /></p>
+
+        Solution 
+
+        ```css 
+        body {
+          margin: 0; /* enlever l'espace par défaut */
+          padding: 0;  /* enlever l'espace par défaut */
+        } 
+        ``` 
+        <!--.element: class="delayed"-->
+      </script>
+    </section>
+    
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        # Exercice 7 - Espacements 
+
+        Ajuster les espacements suivants à 100px / 150px
+
+        * header 
+        * section 
+        * footer 
+
+        Solution 
+
+        ```css 
+        header, 
+        section, 
+        footer {
+          padding: 100px 150px;
+        }
+        ``` 
+        <!--.element: class="delayed"-->
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Changer le texte
+
+        ## Couleur et taille
+
+        On peut indiquer une couleur en hexadécimal ou utiliser les couleurs par défaut disponibles. 
+
+        ```css
+        p { 
+          color: black; /* Couleur du texte */
+          font-size: 18px; /* Taille du texte */
+        } 
+        ```
 
         
+        ## Paragraphes
+
+        ```css
+        p {
+          line-height: 15px; /* Changement de l'interligne */
+          text-align: center; /* Centrer le texte dans un paragraphe */
+        } 
+        ```
+        
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice 8 - Changer les couleurs du site 
+
+        Choisir une palette de couleur. Changer les fonds des sections en utilisant la propriété CSS ```background-color```
+        Pour trouver une palette de couleurs, vous pouvez vous aider de <a href="http://www.colourlovers.com/">ColourLovers</a>.
+
+        Changer la taille des polices :
+
+        * Titre h1 à 100px 
+        * Paragraphes à 18px 
+        * Titre h2 à 32px 
+
+
+        Solution 
+
+```css 
+  header {
+    background: #eeeeee;
+  } 
+
+  h2 {
+    font-size: 32px; 
+  }
+
+  #loves {
+    background: #342481;
+  }
+
+  footer {
+    background: #444;
+    color: #CECCCC;
+  }
+
+  h1 {
+    font-size: 75px;  
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5; /* interligne du paragraphe */
+  }
+
+  a {
+    color: #342481; 
+  }
+``` 
+<!--.element: class="delayed"-->
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Autres astuces CSS 
+
+        ## Modifications sur l'image 
+        ```css
+        img {
+          border-radius: 50%; /* Arrondir l'image */
+          width: 100px; /* Forcer la largeur de l'image à 100px */
+        } 
+        ```
+
+        ## Changer la typographie 
+        On peut utiliser des polices personnalisées pour le texte. 
+        Google Fonts recense des milliers de polices. 
+
+        ```html 
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        ```
+
+        ```css 
+        p { 
+          font-family: 'Indie Flower', cursive; 
+        }
+        ```
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice 9 - Changer les typographies des titres et des paragraphes
+        
+        On peut utiliser Google Fonts et la propriété ```font-family```
+        
+        Solution 
+        ```css 
+        h1 {
+          font-family: 'Indie Flower', cursive; 
+        }
+        p {
+          font-family: 'Arial', sans-serif; /* La propriété sans-serif est lue si la police n'est pas chargée */ 
+        }
+        ``` 
+        <!--.element: class="delayed"-->
+
+
+        ```html
+        <head> 
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        </head>
+        ``` 
+        <!--.element: class="delayed"-->
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Exercice 10 - Aligner notre image de profil à droite
+        
+        On peut utiliser la propriété ```float```.
+        
+        Solution 
+        ```css 
+        img.profile-img {
+          float: right;
+        }
+        ``` 
+        <!--.element: class="delayed"-->
+      </script>
+    </section>
+ 
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # WOOT WOOT
+        <p class="centered">
+          <span>C'était le dernier exercice!</span>
+          <br />
+          <img src="https://media.giphy.com/media/Md4xQfuJeTtx6/giphy.gif" />
+        </p>
+      </script>
+      </section>
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        # Aller plus loin 
+
+        ## Héberger son site web 
+        * Opter pour un hébergeur payant : 1&1, OVH
+        * Héberger gratuitement votre site sur Github : https://pages.github.com/ 
+
+        ## Découvrir Javascript 
+
+        Pour créer un site dynamique 
+
+        * OpenClassrooms : http://www.openclassrooms.com
+        * Ateliers NodeSchool à Paris : https://www.nodeschool.io
       </script>
     </section>
 
     <!-- Last slide -->
     <section class="slide last">
-      <h1>Merci!</h1>
-      <h2 class="heading-bg">
-        <span>Pour aller plus loin<br></span>
-      </h2>  
+      <h1>Merci!</h1> 
       <h2><span class="cursive">On reste en contact !</span></h2>
+      <p class="centered"><img src="https://media.giphy.com/media/26gsdJuCKyXixRbVu/giphy.gif" /></p>
       <ul>
-        <li><a href="mailto:">paris@ladiesofcode.com</a></li>
+        <li><a href="mailto:paris@ladiesofcode.com">paris@ladiesofcode.com</a></li>
         <li><a href="http://paris.ladiesofcode.com">paris.ladiesofcode.com</a></li>
         <li><a href="http://twitter.com/LadiesCodeParis">@LadiesCodeParis</a></li>
       </ul>
