@@ -32,14 +32,14 @@
         
         <h2>Prérequis à télécharger<br></h2>
         <ol class="downloads">
-          <li>Présentation (Fichier ZIP): <a href="https://bit.ly/intro-html5-css3">https://bit.ly/intro-html5-css3</a>
+          <li>Cours + Projet (Fichier ZIP): <a href="https://bit.ly/intro-html5-css3">https://bit.ly/intro-html5-css3</a>
             <ul>
               <li>Dé-zipper l'archive des fichiers</li>
               <li>Ouvrir le fichier <em>slides.html</em> dans le navigateur de ton choix</li>
             </ul>
           </li>
-          <li>Éditeur Atom: <a href="http://atom.io">http://atom.io</a></li>
-          <li>Navigateur Chrome: <a href="https://www.google.fr/chrome/browser/desktop/">https://www.google.fr/chrome</a></li>
+          <li>Éditeur de code: <a href="http://atom.io">Atom</a> suggéré</li>
+          <li>Navigateur: <a href="https://www.google.fr/chrome/browser/desktop/">Chrome</a> suggéré</li>
           </li>
         </ol>
       </div>
@@ -83,6 +83,20 @@
       </script>
     </section>
 
+    <section class="slide centered" data-markdown data-toc>
+        <script type="text/template">
+        #Le projet du jour
+          
+        On va réaliser ce projet via 10 exercices !  
+
+        * HTML (2h)
+        * Petite pause !  
+        * CSS (2h)
+        * Goûter !
+
+        </script>
+      </section>
+
 
     <section class="slide title" data-markdown>
       <script type="text/template">
@@ -107,9 +121,9 @@
       <script type="text/template">
         # Comment ça marche ?
 
-        Quand tu tapes "http://www.google.fr" sur ton navigateur ...
+        Quand tu tapes l'adresse d'un site sur ton navigateur ...
         
-        * Le navigateur va retrouver le serveur de Google et communiquer avec lui <!-- .element: class="delayed" -->
+        * Le navigateur va retrouver le serveur qui héberge ce site et communiquer avec lui <!-- .element: class="delayed" -->
         * Le serveur lui répond du HTML <!-- .element: class="delayed" -->
         * Le navigateur interprète ce HTML et l'affiche pour le visiteur <!-- .element: class="delayed" -->
       </script>
@@ -133,9 +147,7 @@
         Un éditeur de texte permet d'écrire et de lire du code. 
 
         Il en existe énormément: Sublime Text, Notepad++, Visual Code ... 
-        <p class="centered"><img src="./framework/img/workshop/atom.png" width="100" /> <img src="./framework/img/workshop/sublime.jpg" width="100" /> <img src="./framework/img/workshop/visualcode.jpg" width="100" /></p>
-
-        On ne peut pas écrire de code sous Word !  
+        <p class="centered"><img src="./framework/img/workshop/atom.png" width="100" /> <img src="./framework/img/workshop/sublime.jpg" width="100" /> <img src="./framework/img/workshop/visualcode.jpg" width="100" /></p> 
       </script>
     </section>
 
@@ -185,7 +197,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Exercice 1: Créons un fichier nommé index.html ! (5mn)
+        # Exercice 1: Créons un fichier nommé index.html !
 
         1. Crée un dossier qui contiendra ton futur site 
         2. Dans ce dossier, crée un fichier qui s'appellera `index.html`
@@ -276,13 +288,15 @@
       <script type="text/template">
         # Structurer une page HTML 
 
-        <p class="centered">Il faut penser à la structure de notre page</p>
-        <p class="centered">On va utiliser des balises pour représenter les différents éléments de la page<br />
-          <img src="./framework/img/workshop/elements-html.png" /></p>
+        <p class="centered">Il faut penser à la structure de notre page</p> 
 
-        <p>
-        <a href="http://www.html5doctor.com">HTML5Doctor</a> pour connaître les balises HTML5 existantes<br/>
-        <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">Graphique pour savoir quelle balise utiliser</a></p>
+        En observant la maquette finale de notre site, on découpe les parties principales avec des balises HTML5.
+
+        * ```header``` 
+        * ```section```  
+        * ```footer``` 
+        * ... 
+
       </script>
     </section>
 
@@ -304,7 +318,7 @@
 
         1. Créer les blocs dans votre corps de page. 
         2. On va créer un header, deux sections et un footer.
-        3. Ajouter l'attribut id="" à chaque section pour pouvoir l'identifier plus tard dans notre CSS
+        3. Ajouter l'attribut ```id=""``` à chaque section.
 
         <p class="centered"><img src="./framework/img/workshop/projetfinal.png" width="300"/></p>
 
@@ -358,15 +372,13 @@
 
         Il existe de nombreuses balises pour représenter le contenu en HTML5. 
         <p class="centered">
-          <img src="./framework/img/workshop/elements-html.png" />
-        </p>
+          <img src="./framework/img/workshop/elements-html.png" width="600"/>
+        </p> 
 
-        <p>
-          <a href="http://www.html5doctor.com">HTML5Doctor</a> pour connaître les balises HTML5 existantes<br/>
-          <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">Graphique pour savoir quelle balise utiliser</a>
-        </p>
-      
-
+        ---
+        ###Ressources  
+        * <a href="http://www.html5doctor.com">HTML5Doctor</a> pour connaître les balises HTML5 existantes
+        * <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">Graphique pour savoir quelle balise utiliser</a>
       </script>
     </section>
 
@@ -636,9 +648,10 @@
         }
         ```
 
-        Notes  
+        ---
 
-        <a href="https://www.w3schools.com/cssref/">Ensemble des propriétés CSS</a>
+        ###Ressources
+        * <a href="https://www.w3schools.com/cssref/">Ensemble des propriétés CSS</a>
       </script>
     </section>
 
@@ -659,9 +672,6 @@
             font-weight : bolder; 
           }
           ```
-          Notes : 
-  
-          <a href="https://www.w3schools.com/cssref/">Ensemble des propriétés CSS</a>
         </script>
       </section>
   
@@ -863,7 +873,7 @@
         Google Fonts recense des milliers de polices. 
 
         ```html 
-        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
         ```
 
         ```css 
@@ -895,7 +905,7 @@
 
         ```html
         <head> 
-        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
         </head>
         ``` 
         <!--.element: class="delayed"-->
@@ -931,6 +941,12 @@
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
         # Aller plus loin 
+
+        ## Continuer à se pratiquer ! 
+        * Des sites comme jsfiddle.net permettent de voir le rendu de votre site instantannément 
+
+        ## Se perfectionner en CSS 
+        * Apprendre à utiliser <a href="https://getbootstrap.com/">Bootstrap</a>  
 
         ## Héberger son site web 
         * Opter pour un hébergeur payant : 1&1, OVH

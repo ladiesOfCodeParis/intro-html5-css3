@@ -522,8 +522,9 @@ _.prototype = {
 			
 			// Hide iframes from CSSS imports
 			$$('iframe.csss-import').forEach(function (iframe) { iframe.classList.remove('show'); });
+			var totalLength = this.slides.length;
 
-			this.indicator.textContent = this.index + 1;
+			this.indicator.textContent = this.index + 1 + "/" + totalLength ; 
 
 			// Update items collection
 			this.items = $$('.delayed, .delayed-children > *', this.slides[this.slide]);
